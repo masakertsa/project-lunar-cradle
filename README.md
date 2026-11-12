@@ -23,6 +23,7 @@ An integrated robotic ecosystem engineered for the lunar regolith environment:
 - **Tether Matrix Flex Shielding:** Umbilical cables are housed in multi-axis ball-joints with articulated quartz-glass sleeves to protect against arcing and thermal drops.
 - **Boom-Assisted Startup & Laser-Sintered Eddy-Current Leaping:** Deployment booms suspend parasite drones while pulse lasers sinter iron-rich regolith into a conductive crust, enabling magnetic eddy-current (Lenz's law) hopping and hovering.
 - **Subsurface Laser Spalling, Mechanical Legs & Contact Sonar:** Anchored mechanical legs and acoustic piezo-transducers utilize seismic contact sonar to map subsurface structures in the vacuum while lasers and magnetic bursts fracture bedrock.
+- **In-Flight Thermite Pad Sintering & Hexagonal Cermet Tiles:** Prior to touchdown, precursor drones or hovering landers dispense locally refined iron-oxide/aluminum thermite charges onto the regolith and ignite them via pulse laser—fusing a dust-free, high-strength iron-alumina cermet landing pad in seconds. Once landed, the Mothership Drone casts interlocking **hexagonal structural tiles** (separated by expansion gaps to survive +120°C to -130°C thermal cycles) to build conductive eddy-current pathways, thermal heat-storage pads, and liftable bridging/roofing slabs for cable trenches and micrometeoroid shelters.
 
 ---
 
