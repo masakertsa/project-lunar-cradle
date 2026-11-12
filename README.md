@@ -34,6 +34,7 @@ High-output energy generation isolated on the Moon's far side away from human pr
 - **Quartz Radiation Shielding & Radiative Heat Rejection:** Micro-reactors are housed in high-purity fused quartz shielding with high-emissivity radiative cooling fins for deep-space heat rejection.
 - **Tritium, Helium-3 & Silica Refinement:** Automated columns process spent nuclear fuel and regolith to isolate fusion isotopes and refine raw lunar silica into replacement quartz insulation.
 - **Lunar Mass Shielding:** The Moon's physical mass acts as a natural barrier blocking operational noise and radiation from near-side human terminals.
+- **1/6G Stacked Magnetic-Bellows Seismic Isolation Grid:** Taking advantage of the Moon's low gravity and dry vacuum, micro-reactors and separation columns rest on a grid of self-centering ground pedestals. Each pedestal combines a spherical bottom magnetic core with stacked, vertically repelling Samarium-Cobalt (SmCo) ring arrays ("magnetic bellows") and a copper eddy-current damping collar—absorbing hour-long lunar quakes with zero mechanical contact, wear, or electrical power.
 
 ---
 
