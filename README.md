@@ -10,7 +10,7 @@ The orbital gateway operates without chemical propellants by utilizing a short-t
 
 - **Dual Skyhook Tether Array:** Synchronized, counter-rotating orbital tethers capture incoming transit cargo and surface-launch vectors mechanically, functioning as momentum slingshots.
 - **Local Momentum Equilibrium:** Inbound transit cargo and outbound Lunar Helium-3/minerals dynamically cancel each other's orbital energy impacts.
-- **Zero-Propellant Orbit Maintenance:** The node preserves angular momentum and altitude through pure mechanical trade.
+- **Symmetrical Counter-Ballasting & Zero-Propellant Orbit Maintenance:** Before every release cycle, both tether tips are dynamically mass-balanced using variable ballast (such as raw regolith, sintered slag, or empty return canisters) to match the opposing payload mass. Simultaneous release of equal masses in opposite directions cancels recoil forces to zero—guaranteeing strict center-of-mass stability and continuous operation without waiting for equal commercial return cargo.
 
 ---
 
