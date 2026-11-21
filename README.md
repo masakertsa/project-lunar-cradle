@@ -74,7 +74,7 @@ To maintain a "clean-zone" standard for magnetic/electrostatic drone repulsion a
 * **Thermite-Accelerated Shell Cubes:** Below the harvested slab, a 1.2 m × 1.2 m × 0.6 m pit is excavated. Drones sinter a hollow structural shell cube (15–20 cm walls) using pulsed lasers and ISRU-derived thermite strips (cutting power demand by >70%), fill the core with compacted ballast, and leave calibrated expansion joints between cubes.
 * **Staggered Top Decking (Running Bond):** The harvested 20 cm slabs are laid over the base cubes with a 0.6 m offset (total shielding depth 80 cm; 25–30 cm slabs under heavy pads). This covers underlying expansion joints without chemical sealants while providing a conductive metallic iron grid for propellantless drone levitation.
 
-![Staggered Foundation & Running Bond Decking](foundation-diagram.svg)
+<img src="https://githubusercontent.com" alt="Staggered Foundation & Running Bond Decking" width="100%">
 
 ### 5.4. Isolated Superstructure: Passive Gel/Aerogel Base-Isolation Pads
 * **Zero-Power Passive Decoupling:** Point-mounted base-isolation bearings are installed onto designated 1.2 m grid nodes. Each bearing consists of a vacuum-stable, high-temperature silicone-aerogel composite core ("thermal gel") enclosed in a flexible, ISRU-manufactured metallic bellows shield to block dust and UV radiation.
