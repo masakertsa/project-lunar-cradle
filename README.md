@@ -74,7 +74,25 @@ To maintain a "clean-zone" standard for magnetic/electrostatic drone repulsion a
 * **Thermite-Accelerated Shell Cubes:** Below the harvested slab, a 1.2 m × 1.2 m × 0.6 m pit is excavated. Drones sinter a hollow structural shell cube (15–20 cm walls) using pulsed lasers and ISRU-derived thermite strips (cutting power demand by >70%), fill the core with compacted ballast, and leave calibrated expansion joints between cubes.
 * **Staggered Top Decking (Running Bond):** The harvested 20 cm slabs are laid over the base cubes with a 0.6 m offset (total shielding depth 80 cm; 25–30 cm slabs under heavy pads). This covers underlying expansion joints without chemical sealants while providing a conductive metallic iron grid for propellantless drone levitation.
 
-<img src="https://githubusercontent.com" alt="Staggered Foundation & Running Bond Decking" width="60%">
+```mermaid
+block-beta
+  columns 6
+  space:1
+  SlabA["TOP SLAB A (1.2 m × 20 cm)<br/>60 cm + 60 cm overlap"]:2
+  SlabB["TOP SLAB B (1.2 m × 20 cm)<br/>60 cm + 60 cm overlap"]:2
+  space:1
+
+  Cube1["BASE CUBE 1 (1.2 m × 60 cm)<br/>Thermite-Sintered Shell + Ballast"]:2
+  Cube2["BASE CUBE 2 (1.2 m × 60 cm)<br/>(Top Gap centered over this cube)"]:2
+  Cube3["BASE CUBE 3 (1.2 m × 60 cm)<br/>Thermite-Sintered Shell + Ballast"]:2
+
+  style SlabA fill:#64748b,stroke:#cbd5e1,stroke-width:2px,color:#fff
+  style SlabB fill:#64748b,stroke:#cbd5e1,stroke-width:2px,color:#fff
+  style Cube1 fill:#334155,stroke:#fb923c,stroke-width:2px,color:#fff
+  style Cube2 fill:#334155,stroke:#38bdf8,stroke-width:2px,color:#fff
+  style Cube3 fill:#334155,stroke:#fb923c,stroke-width:2px,color:#fff
+```
+
 
 ### 5.4. Isolated Superstructure: Passive Gel/Aerogel Base-Isolation Pads
 * **Zero-Power Passive Decoupling:** Point-mounted base-isolation bearings are installed onto designated 1.2 m grid nodes. Each bearing consists of a vacuum-stable, high-temperature silicone-aerogel composite core ("thermal gel") enclosed in a flexible, ISRU-manufactured metallic bellows shield to block dust and UV radiation.
