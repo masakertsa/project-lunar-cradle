@@ -84,7 +84,7 @@ graph TD
     style OW2 fill:#475569,stroke:#cbd5e1,stroke-width:2px,color:#fff
     style Gap1 fill:#fb923c,stroke:#ea580c,stroke-width:1px,color:#fff
     style Gap2 fill:#fb923c,stroke:#ea580c,stroke-width:1px,color:#fff
-``
+```
 
 ### 5.2. Surface Cleaning & Regolith Collection: Multi-Option Brush & Tube System
 To maintain a "clean-zone" standard for magnetic/electrostatic drone repulsion and isolation bearings, work drones sweep loose dust into partial-fill collection tubes (60–70% capacity to prevent vacuum bridging) using interchangeable modules:
