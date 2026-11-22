@@ -129,19 +129,36 @@ To enable dust-free, mechanical-seal-free access and long-term standby sealing i
 ### 6.1. 4-Seam Alternating Elastic–Rigid Tube Profile
 Traditional rigid tunnels crack or warp when subjected to steep thermal gradients (e.g., heated interior airlocks bordering -230 °C vacuum). Instead, the PSR transit tube uses a four-corner vertical seam geometry that absorbs differential expansion and freezing pressures:
 
-```text
-Top-Down Cross-Section (4-Seam Elastic–Rigid Tunnel & Ice Door):
+```mermaid
+graph TD
+    TopWall[RIGID SINTERED / QUARTZ WALL<br/>Structural Overburden Support]
+    
+    subgraph "4-Seam Elastic–Rigid Cross-Section"
+        SeamTL((ELASTIC SEAM<br/>Cryo-Elastomer / Bellows))
+        SeamTR((ELASTIC SEAM<br/>Cryo-Elastomer / Bellows))
+        
+        IceDoor[WATER / ICE PHASE BARRIER DOOR<br/>0-Watt Solid Plug at -230 °C<br/>~9% Freezing Expansion]
+        
+        SeamBL((ELASTIC SEAM<br/>Absorbs Expansion))
+        SeamBR((ELASTIC SEAM<br/>Absorbs Expansion))
+    end
+    
+    BottomWall[RIGID SINTERED / QUARTZ WALL<br/>Structural Base]
 
-          [ RIGID SINTERED / QUARTZ WALL ]
-       ╔════════════════════════════════════╗
-   (ELASTIC)                            (ELASTIC)  <-- Vertical Expansion Seams
-       ║      ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~       ║          (Cryo-Elastomer / Metal Bellows)
-       ║      ~  WATER / ICE PHASE  ~       ║
-       ║      ~    BARRIER DOOR     ~       ║
-       ║      ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~       ║
-   (ELASTIC)                            (ELASTIC)  <-- Absorbs Ice Freezing Expansion
-       ╚════════════════════════════════════╝
-          [ RIGID SINTERED / QUARTZ WALL ]
+    TopWall --- SeamTL & SeamTR
+    SeamTL & SeamTR --- IceDoor
+    IceDoor --- SeamBL & SeamBR
+    SeamBL & SeamBR --- BottomWall
+
+    IceDoor -.->|Outward radial flex<br/>creates airtight seal| SeamTL & SeamTR & SeamBL & SeamBR
+
+    style TopWall fill:#475569,stroke:#cbd5e1,stroke-width:2px,color:#fff
+    style BottomWall fill:#475569,stroke:#cbd5e1,stroke-width:2px,color:#fff
+    style IceDoor fill:#38bdf8,stroke:#0284c7,stroke-width:2px,color:#fff
+    style SeamTL fill:#fb923c,stroke:#ea580c,stroke-width:2px,color:#fff
+    style SeamTR fill:#fb923c,stroke:#ea580c,stroke-width:2px,color:#fff
+    style SeamBL fill:#fb923c,stroke:#ea580c,stroke-width:2px,color:#fff
+    style SeamBR fill:#fb923c,stroke:#ea580c,stroke-width:2px,color:#fff
 ```
 
 * **Alternating Seam Architecture:** Viewed from above, the tube cross-section is divided by **four vertical seams** arranged in an alternating **Elastic – Rigid – Elastic** configuration. Rigid walls (sintered regolith or fused quartz) carry structural overburden, while vertical elastic joints (cryogenic fluorosilicone or corrugated metal bellows) decouple thermal stress.
