@@ -56,13 +56,35 @@ To build dust-free, thermally stable habitats and industrial pads in vacuum, 1/6
 ### 5.1. Landing Pad Blast Protection: Overlapping Double-Ring Berm
 * **Labyrinth Blast Deflection:** Landing zones are surrounded by a low-profile (0.5–1.2 m) sintered double-ring wall composed of staggered, overlapping segments. Viewed from the side, the barrier forms a solid shield that blocks high-velocity horizontal ejecta; viewed from above, uniform gaps between segments allow thruster exhaust gases to vent safely upward and outward without back-pressure or thermal cracking.
 
-```text
-Top-Down View of Double-Ring Blast Berm:
-   [ Inner Wall Segment ]       [ Inner Wall Segment ]
+```mermaid
+graph TD
+    Pad([Landing Pad: Thruster Exhaust & Ejecta])
+    
+    subgraph "Inner Sintered Ring (0.5–1.2 m)"
+        IW1[Inner Wall Segment]
+        Gap1((Vent Gap))
+        IW2[Inner Wall Segment]
+    end
+    
+    subgraph "Outer Staggered Ring (Overlapping)"
+        OW1[Outer Wall Segment]
+        Gap2((Vent Gap))
+        OW2[Outer Wall Segment]
+    end
 
-             |   (vent gap)               |   (vent gap)
-[ Outer Wall Segment ]       [ Outer Wall Segment ]
-```
+    Pad -->|Blocks horizontal ejecta| IW1 & IW2
+    Pad -->|Exhaust gas vents through gap| Gap1
+    Gap1 -->|Deflected & vented safely upward| OW1 & OW2
+    Gap1 -.->|Staggered exhaust dispersion| Gap2
+
+    style Pad fill:#38bdf8,stroke:#0284c7,stroke-width:2px,color:#fff
+    style IW1 fill:#64748b,stroke:#cbd5e1,stroke-width:2px,color:#fff
+    style IW2 fill:#64748b,stroke:#cbd5e1,stroke-width:2px,color:#fff
+    style OW1 fill:#475569,stroke:#cbd5e1,stroke-width:2px,color:#fff
+    style OW2 fill:#475569,stroke:#cbd5e1,stroke-width:2px,color:#fff
+    style Gap1 fill:#fb923c,stroke:#ea580c,stroke-width:1px,color:#fff
+    style Gap2 fill:#fb923c,stroke:#ea580c,stroke-width:1px,color:#fff
+``
 
 ### 5.2. Surface Cleaning & Regolith Collection: Multi-Option Brush & Tube System
 To maintain a "clean-zone" standard for magnetic/electrostatic drone repulsion and isolation bearings, work drones sweep loose dust into partial-fill collection tubes (60–70% capacity to prevent vacuum bridging) using interchangeable modules:
