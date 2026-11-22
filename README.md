@@ -167,6 +167,21 @@ Mechanical hinges, rubber O-rings, and sliding latches rapidly degrade, jam, and
 * **Commissioning / Open State (Controlled Thermal Liquefaction):** When the standby tunnel is ready to be commissioned for active use (or opened for cargo/drones), localized induction/resistive heating elements (or routed reactor waste heat) warm the frame perimeter. Once the pressurized interior side is equalized, the ice melts cleanly back into liquid water, which is drained via bottom sump channels into heated storage tanks for closed-loop reuse—leaving a completely unobstructed opening with zero exposed mechanical hardware.
 * **Emergency Isolation & Thermal Buffer:** The same mechanism functions as a fail-safe emergency bulkhead to isolate breached or damaged tunnel sections. Additionally, the high latent heat of fusion and specific heat capacity of the water/ice barrier act as a natural thermal buffer, stabilizing temperatures between the interior tunnel and the cryogenic crater floor.
 
+```mermaid
+graph TD
+    subgraph "Staggered Top Decking"
+        SlabA{{"TOP SLAB A"}}
+        SlabB{{"TOP SLAB B"}}
+    end
+    subgraph "Thermite-Sintered Base Modules"
+        Cube1{{"BASE MODULE 1"}}
+        Cube2{{"BASE MODULE 2"}}
+        Cube3{{"BASE MODULE 3"}}
+    end
+    SlabA --- Cube1 & Cube2
+    SlabB --- Cube2 & Cube3
+```
+
 ---
 
 ## 📄 License
