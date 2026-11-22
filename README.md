@@ -97,22 +97,18 @@ To maintain a "clean-zone" standard for magnetic/electrostatic drone repulsion a
 * **Staggered Top Decking (Running Bond):** The harvested 20 cm slabs are laid over the base cubes with a 0.6 m offset (total shielding depth 80 cm; 25–30 cm slabs under heavy pads). This covers underlying expansion joints without chemical sealants while providing a conductive metallic iron grid for propellantless drone levitation.
 
 ```mermaid
-block-beta
-  columns 6
-  space:1
-  SlabA["TOP SLAB A (1.2 m × 20 cm)<br/>60 cm + 60 cm overlap"]:2
-  SlabB["TOP SLAB B (1.2 m × 20 cm)<br/>60 cm + 60 cm overlap"]:2
-  space:1
-
-  Cube1["BASE CUBE 1 (1.2 m × 60 cm)<br/>Thermite-Sintered Shell + Ballast"]:2
-  Cube2["BASE CUBE 2 (1.2 m × 60 cm)<br/>(Top Gap centered over this cube)"]:2
-  Cube3["BASE CUBE 3 (1.2 m × 60 cm)<br/>Thermite-Sintered Shell + Ballast"]:2
-
-  style SlabA fill:#64748b,stroke:#cbd5e1,stroke-width:2px,color:#fff
-  style SlabB fill:#64748b,stroke:#cbd5e1,stroke-width:2px,color:#fff
-  style Cube1 fill:#334155,stroke:#fb923c,stroke-width:2px,color:#fff
-  style Cube2 fill:#334155,stroke:#38bdf8,stroke-width:2px,color:#fff
-  style Cube3 fill:#334155,stroke:#fb923c,stroke-width:2px,color:#fff
+graph TD
+    subgraph "Staggered Top Decking"
+        SlabA["TOP SLAB A (1.2m × 20cm)<br/>60cm + 60cm overlap"]
+        SlabB["TOP SLAB B (1.2m × 20cm)<br/>60cm + 60cm overlap"]
+    end
+    subgraph "Thermite-Sintered Base Cubes"
+        Cube1["BASE CUBE 1"]
+        Cube2["BASE CUBE 2 (Seam Centered)"]
+        Cube3["BASE CUBE 3"]
+    end
+    SlabA --- Cube1 & Cube2
+    SlabB --- Cube2 & Cube3
 ```
 
 
