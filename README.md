@@ -99,18 +99,17 @@ To maintain a "clean-zone" standard for magnetic/electrostatic drone repulsion a
 ```mermaid
 graph TD
     subgraph "Staggered Top Decking"
-        SlabA["TOP SLAB A (1.2m × 20cm)<br/>60cm + 60cm overlap"]
-        SlabB["TOP SLAB B (1.2m × 20cm)<br/>60cm + 60cm overlap"]
+        SlabA{{"TOP SLAB A"}}
+        SlabB{{"TOP SLAB B"}}
     end
-    subgraph "Thermite-Sintered Base Cubes"
-        Cube1["BASE CUBE 1"]
-        Cube2["BASE CUBE 2 (Seam Centered)"]
-        Cube3["BASE CUBE 3"]
+    subgraph "Thermite-Sintered Base Modules"
+        Cube1{{"BASE MODULE 1"}}
+        Cube2{{"BASE MODULE 2"}}
+        Cube3{{"BASE MODULE 3"}}
     end
     SlabA --- Cube1 & Cube2
     SlabB --- Cube2 & Cube3
 ```
-
 
 ### 5.4. Isolated Superstructure: Passive Gel/Aerogel Base-Isolation Pads
 * **Zero-Power Passive Decoupling:** Point-mounted base-isolation bearings are installed onto designated 1.2 m grid nodes. Each bearing consists of a vacuum-stable, high-temperature silicone-aerogel composite core ("thermal gel") enclosed in a flexible, ISRU-manufactured metallic bellows shield to block dust and UV radiation.
